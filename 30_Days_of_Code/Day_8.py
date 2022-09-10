@@ -14,16 +14,19 @@ Sam is one of the keys in our dictionary, so we print sam=1934769295.
 Query 1: edward
 Edward is not one of the keys in our dictionary, so we print Not found.
 """
+import sys
+
 n = int(input())
 phoneBook = {}
 
 for i in range(n):
-  entry = input().split()
-  phoneBook[entry[0]] = entry[1]
+    entry = input().split()
+    phoneBook[entry[0]] = entry[1]
 
-for j in range(n):
-  name = str(input())
-  if name not in phoneBook:
-    print('Not found')
+lines = sys.stdin.readlines() # because there are an unknown number of lines of queries
+for i in lines:
+  name = i.strip()
+  if name in phoneBook:
+    print(name + '=' + str(phoneBook[name]))
   else:
-    print(name + '=' + str(phoneBook[nane]))
+    print('Not found')
