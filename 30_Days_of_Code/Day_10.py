@@ -12,8 +12,8 @@ if __name__ == '__main__':
     remainder.append(n % 2)
     n //= 2
 binary = re.sub(r'[^1]', ' ', ''.join(map(str, remainder[::-1]))).split()
+max = len(binary[0])
 for i in binary:
-  max = len(binary[0])
   if len(i) > max:
     max = len(i)
 print(max)
