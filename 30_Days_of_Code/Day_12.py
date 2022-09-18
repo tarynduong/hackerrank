@@ -18,6 +18,7 @@ class Person:
   def __init__(self, firstName, lastName, idNumber, scores):
     super().__init__(fitstName, lastName, idNumber) # inheritance all the methods and properties from the Person class
     self.scores = scores
+  # Method to determine the grade letter:
   def calculate_grade(self):
     total = 0
     for i in self.scores:
