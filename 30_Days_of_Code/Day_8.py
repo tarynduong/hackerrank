@@ -1,9 +1,9 @@
 """
 The first line contains an integer, n, denoting the number of entries in the phone book.
-Each of the n subsequent lines describes an entry in the form of 2 space-separated values on a single line. The first value is a friend's name,
-and the second value is an 8-digit phone number.
-After the  lines of phone book entries, there are an unknown number of lines of queries.
-Each line (query) contains a name to look up, and you must continue reading lines until there is no more input.
+Each of the n subsequent lines describes an entry in the form of 2 space-separated values on a single line.
+The first value is a friend's name and the second value is an 8-digit phone number. 
+After the lines of phone book entries, there is an unknown number of lines of queries.
+Each line contains a name to look up, and you must continue reading lines until there is no more input.
 Note: Names consist of lowercase English alphabetic letters and are first names only.
 
 We add the following n=3 (Key, Value) pairs to our map so it looks like this:
