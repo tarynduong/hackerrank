@@ -21,4 +21,16 @@ Given an array, a, of size n distinct elements, sort the array in ascending orde
 First Element: firstElement, where  is the first element in the sorted array.
 Last Element: lastElement, where  is the last element in the sorted array.
 """
-
+if __name__ == '__main__':
+  n = int(input().strip())
+  a = list(map(int, input().rstrip().split()))
+  
+  numSwaps = 0
+  for step in range(n - 1, 0, -1):
+    for i in range(step):
+      if a[i] > a[i + 1]:
+        a[i], a[i + 1] = a[i + 1], a[i]
+        numSwaps += 1
+print('Array is sorted in', numSwaps, 'swaps.')
+print('First Element:', a[0])
+print('Last Element:', a[-1])
