@@ -26,6 +26,6 @@ for i in range(len(s) // 2):
     isPalindrome = False
     break
 if isPalindrome:
-  print('The word ', s, ' is a palindrome.')
+  print('The word', s, 'is a palindrome.')
 else:
-  print('The word ', s, ' is not a palindrome.')
+  print('The word', s, 'is not a palindrome.')
