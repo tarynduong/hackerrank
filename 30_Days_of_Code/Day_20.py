@@ -31,6 +31,7 @@ if __name__ == '__main__':
       if a[i] > a[i + 1]:
         a[i], a[i + 1] = a[i + 1], a[i]
         numSwaps += 1
+
 print('Array is sorted in', numSwaps, 'swaps.')
 print('First Element:', a[0])
 print('Last Element:', a[-1])
