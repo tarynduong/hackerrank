@@ -16,17 +16,17 @@ Edward is not one of the keys in our dictionary, so we print Not found.
 """
 import sys
 
-n = int(input())
+n = int(input()) # size of the dictionary
 phoneBook = {}
 
 for i in range(n):
-    entry = input().split()
+    entry = input().split() # enter element into dictionary
     phoneBook[entry[0]] = entry[1]
 
 lines = sys.stdin.readlines() # because there are an unknown number of lines of queries
 for i in lines:
-  name = i.strip()
-  if name in phoneBook:
-    print(name + '=' + str(phoneBook[name]))
-  else:
-    print('Not found')
+    name = i.strip()
+    if name in phoneBook:
+        print(name + '=' + str(phoneBook[name]))
+    else:
+        print('Not found')
