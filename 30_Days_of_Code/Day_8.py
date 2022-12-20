@@ -20,10 +20,10 @@ n = int(input()) # size of the dictionary
 phoneBook = {}
 
 for i in range(n):
-    entry = input().split() # enter element into dictionary
+    entry = input().split() # enter elements into dictionary
     phoneBook[entry[0]] = entry[1]
 
-lines = sys.stdin.readlines() # because there are an unknown number of lines of queries
+lines = sys.stdin.readlines() # because there is an unknown number of lines of queries
 for i in lines:
     name = i.strip()
     if name in phoneBook:
