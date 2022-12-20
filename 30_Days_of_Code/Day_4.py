@@ -21,14 +21,14 @@ class Person:
 
 # Check class
 t = int(input()) # t is the number of test cases
-for i in range(0, t):
+for i in range(t):
   age = int(input())         
   p = Person(age)  
   p.amIOld()
-  for j in range(0, 3):
+  for j in range(3):
     p.yearPasses()       
   p.amIOld()
-  print("")
+  print('')
 
 """
 Test Case 0: initialAge = -1
