@@ -12,7 +12,7 @@ class Solution:
   def dequeueCharacter(self):
     return self.queue.pop(0)
   def popCharacter(self):
-    return self.stack.pop
+    return self.stack.pop()
   
 s = input()
 obj = Solution()
